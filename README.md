@@ -3,9 +3,9 @@
 # Classes: 
 ## 1) ComputeTransformations:
 ### Pipeline:
-```
+
 * Random sample the source and target point cloud respectively.
-b) Transform the target point cloud.
+* Transform the target point cloud.
 c) Estimate normals for both the source and target point cloud.
 d) Estimate feature descriptors for the two point clouds (FPFH / NARF / SHOT / PFH / VFH).
 e) Find correspondences between the source and targets keypoints feature descriptors.
@@ -18,7 +18,7 @@ k) Transform the transformed source point cloud using the transformation found w
 l) Estimate corespondences between the transformed point cloud using ICP estimation and the target cloud.
 m) Estimate the Affine transformation between the two point clouds.
 n) Visualize the correspondence between the two point clouds.
-```
+
 
 ## 2) SurfaceMatch
 ### Pipeline:
