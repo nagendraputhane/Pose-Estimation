@@ -1,10 +1,10 @@
 # sparse_PC_pose_estimation
 
-#Classes: 
-##1) ComputeTransformations:
-###Pipeline:
+# Classes: 
+## 1) ComputeTransformations:
+### Pipeline:
 ```
-a) Random sample the source and target point cloud respectively.
+* Random sample the source and target point cloud respectively.
 b) Transform the target point cloud.
 c) Estimate normals for both the source and target point cloud.
 d) Estimate feature descriptors for the two point clouds (FPFH / NARF / SHOT / PFH / VFH).
@@ -20,8 +20,8 @@ m) Estimate the Affine transformation between the two point clouds.
 n) Visualize the correspondence between the two point clouds.
 ```
 
-##2) SurfaceMatch
-###Pipeline:
+## 2) SurfaceMatch
+### Pipeline:
 ```
 a) Random sample the source and target point cloud respectively.
 b) Transform the target point cloud.
