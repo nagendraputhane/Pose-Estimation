@@ -11,8 +11,8 @@ int main ()
   src.reset(new PointCloud<PointXYZ>);
   tgt.reset(new PointCloud<PointXYZ>);
 
-  pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("Correspondences"));
-  pcl::visualization::PCLVisualizer::Ptr viewer2 (new pcl::visualization::PCLVisualizer ("Correspondence"));
+  pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("Before Affine"));
+  pcl::visualization::PCLVisualizer::Ptr viewer2 (new pcl::visualization::PCLVisualizer ("After Affine"));
 
   ct.computeTransformation (viewer, viewer2, src, tgt);
 
